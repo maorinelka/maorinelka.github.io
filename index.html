@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Визитка</title>
+    <style>
+        body {
+            background-image: url('5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .vertical-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Отступ между кнопками */
+        }
+    </style>
+</html>
+
+</head>
+<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./avatar.jpg" alt="avatar" class="header__avatar" />
+      <h1 class="header__title">Марина Иргашева</h1>
+      <h3 class="header__subtitle">«Знаю отличную шутку про UDP,</h3>
+      <h4 class="header__subtitle"> но не факт, что она до вас дойдет»</h4>
+    </header>
+    <main>
+      <section class="links">
+        <h2 class="links__header">Доступна</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Телеграм</p>
+            <a class="linsk__link" href="http://t.me/maorinka">@maorinka</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Эл. почта</p>
+            <a class="linsk__link" href="mailto:89161876958@mail.ru"
+              >в процессе</a
+            >
+       
+          <li class="links__link">
+            <p class="links__title">Гит</p>
+            <a class="linsk__link" href="http://github.com/German-D/">в разработке</a>
+          </li>
+        </ul>
+      </section>
+      
+      </section>
+    </main>
+
+
+     <head>
+  <title>Две кнопки</title>
+  <style>
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin: 100px auto;
+    }
+    button {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="showAlert()">Пасхалка</button>
+    <button onclick="showImage()">Тык</button>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert('Время есть куличи!');
+
+    }
+
+    function showImage() {
+      const imageUrl = 'тык.jpg'; // Замените на URL вашего изображения
+      const imgWindow = window.open("", "_blank", "width=600,height=400");
+      imgWindow.document.write(`
+        <html>
+          <head>
+            <title>Изображение</title>
+          </head>
+          <body style="margin:1; display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <img src="${imageUrl}" alt="Изображение" style="max-width: 100%; max-height: 100%;">
+          </body>
+        </html>
+      `);
+      imgWindow.document.close();
+    }
+  </script>
+</body>
+
+   
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
